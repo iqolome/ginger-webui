@@ -37,6 +37,9 @@ angular.module('ginger-router', ['ngRoute'])
 				.when('/blank', {
 					templateUrl: 'views/blank.html'
 				})
+				.when('/new-email', {
+					templateUrl: 'views/new-email.html'
+				})
 				.otherwise({
 					redirectTo: '/dashboard'
 				});

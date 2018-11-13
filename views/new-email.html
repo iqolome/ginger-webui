@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="vendor/webuploader-0.1.5/webuploader.css" />
+<script type="text/javascript" src="vendor/wangEditor-3.1.1/wangEditor.js"></script>
+<div class="container-fluid">
+	<div class="row">
+		<div class="span12">
+			<div class="col-lg-12">
+				<h1 class="page-header">新邮件</h1>
+			</div>
+			<!-- /.col-lg-12 -->
+
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<form role="form">
+										<div class="form-group">
+											<label>发件人</label>
+											<p class="form-control-static" id="sender">15727395495@163.com</p>
+										</div>
+										<div class="form-group">
+											<label>收件人</label>
+											<input class="form-control" placeholder="发给多人时地址请以分号隔开" id="recipients">
+										</div>
+										<div class="form-group">
+											<label>主题</label>
+											<input class="form-control" placeholder="请输入您的主题" id="subject">
+										</div>
+										<div>
+											<input type="file" multiple id="files" style="display: none;" />
+											<button class="btn btn-link" id="add">添加附件 </button>
+											<div class="ui ordered list"></div>
+										</div>
+										<div id="editor" name="editor" style="margin-top: 0.8%;">
+											<p>这是初始内容这是初始内容这是初始内容</p>
+
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<button id="ctlBtn" class="btn btn-success" onclick="send()"><i class="fa fa-send"></i> 发送</button>
+												<button class="btn btn-primary" onclick="settingContent()">设置内容</button>
+												<button class="btn btn-primary" onclick="appendContent()">追加内容</button>
+												<button class="btn btn-danger" onclick="contentClear()">清空</button>
+											</div>
+
+										</div>
+
+									</form>
+								</div>
+								<!-- /.col-lg-6 (nested) -->
+							</div>
+							<!-- /.row (nested) -->
+
+						</div>
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.container-fluid -->
+				<script type="text/javascript" src="views/new-email.js"></script>
